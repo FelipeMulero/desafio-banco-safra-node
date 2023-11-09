@@ -69,3 +69,35 @@ Utilize o seguinte usuário e senha para acessar o projeto:
 
 username: Teste-Safra,
 password: teste@123.
+
+-----------------------------------------------------------------------------------------------------------------
+
+# Para escalar o sistema, podemos seguir as seguintes abordagens:
+
+Frontend: Angular
+Backend: Node.js
+Banco de dados: Local
+
+Escalabilidade horizontal: Essa abordagem consiste em adicionar mais servidores ao sistema. Isso pode ser feito aumentando o número de instâncias do servidor Node.js ou do servidor Angular.
+Escalabilidade vertical: Essa abordagem consiste em aumentar a capacidade de um único servidor. Isso pode ser feito aumentando a memória, a CPU ou o armazenamento do servidor.
+No caso específico do sistema proposto, a escalabilidade horizontal é a abordagem mais recomendada. Isso ocorre porque o sistema é relativamente simples e não requer uma grande quantidade de recursos de processamento.
+
+Para implementar a escalabilidade horizontal, podemos seguir os seguintes passos:
+
+Criar um cluster de servidores Node.js.
+Criar um cluster de servidores Angular.
+Balancear o tráfego entre os servidores do cluster.
+O cluster de servidores Node.js pode ser criado usando um serviço de nuvem, como AWS Elastic Beanstalk ou Google Kubernetes Engine. O cluster de servidores Angular também pode ser criado usando um serviço de nuvem ou um gerenciador de contêineres, como Docker Swarm ou Kubernetes.
+
+O balanceamento de tráfego pode ser feito usando um serviço de balanceamento de carga, como AWS Elastic Load Balancing ou Google Cloud Load Balancing.
+
+Com essas alterações, o sistema será capaz de suportar um número maior de usuários sem comprometer o desempenho.
+
+Aqui estão algumas dicas adicionais para escalar o sistema:
+
+Use um cache para armazenar dados frequentemente acessados.
+Use um banco de dados NoSQL, como MongoDB ou Redis, para dados que não precisam ser armazenados de forma relacional.
+Use um serviço de computação em nuvem para hospedar o sistema.
+Ao seguir essas dicas, você poderá criar um sistema escalável e robusto que atenderá às necessidades de seus usuários.
+
+
