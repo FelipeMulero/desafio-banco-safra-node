@@ -90,7 +90,7 @@ app.get("/query-data/:age", async (req, res) => {
 });
 
 
-app.post("/integrar-dados", async (req, res) => {
+app.post("/iintegrate-data", async (req, res) => {
   try {
     const response = await axios.get('https://randomuser.me/api/?results=10');
     const usersData = response.data.results.map(user => ({
